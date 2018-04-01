@@ -8,6 +8,12 @@ class Php71Phalcon < AbstractPhp71Extension
   sha256 "823fd693a7e9e8999edfd405970a81b7bf731fa28109a64774216fc5f68d2975"
   head "https://github.com/phalcon/cphalcon.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "45b3f37b1d51aada03338e29881b37ce823d773cd9010b355f78f67f1e8bd80e" => :high_sierra
+  end
+
   depends_on "pcre"
 
   def install
