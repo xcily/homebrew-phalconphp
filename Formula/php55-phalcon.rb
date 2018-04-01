@@ -8,13 +8,6 @@ class Php55Phalcon < AbstractPhp55Extension
   sha256 "823fd693a7e9e8999edfd405970a81b7bf731fa28109a64774216fc5f68d2975"
   head "https://github.com/phalcon/cphalcon.git"
 
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "b5987c1e7b7cb6d760f8540ab3aaca788d2430eaabe9a70f97fecbb9de77ea52" => :sierra
-    sha256 "8a30290ae2f77120a3b5b288a0371c294a4436c5a159eb0ab5c7aba59208f5ea" => :el_capitan
-    sha256 "3ba38af7135fb191ee798f1611608b594baa3ddb102beb612acd20468354dce1" => :yosemite
-  end
-
   depends_on "pcre"
 
   def install
