@@ -5,14 +5,7 @@ class Php70Phalcon < AbstractPhp70Extension
   desc "Full-stack PHP framework"
   homepage "https://phalconphp.com/"
   url "https://github.com/phalcon/cphalcon/archive/v3.4.0.zip"
-  sha256 "acbffa40a928672d1874345c2aa4eee6f05e087c943e155031db92db3cdc7429"
   head "https://github.com/phalcon/cphalcon.git"
-
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "bab2d8887398b130e055a86f5f272a2efdb38e4a27cc66cd76a348133c111b65" => :high_sierra
-  end
 
   depends_on "pcre"
 
