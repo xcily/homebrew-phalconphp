@@ -8,12 +8,12 @@ class Php71Phalcon < AbstractPhp71Extension
   sha256 "acbffa40a928672d1874345c2aa4eee6f05e087c943e155031db92db3cdc7429"
   head "https://github.com/phalcon/cphalcon.git"
 
+  depends_on "pcre"
+
   bottle do
     cellar :any_skip_relocation
     sha256 "796f8d84086ba777aa79a6801042c481a7bf0cf83493e59a6606d622eb014500" => :high_sierra
-    end
-
-  depends_on "pcre"
+  end
 
   def install
     Dir.chdir "build/php7/64bits"

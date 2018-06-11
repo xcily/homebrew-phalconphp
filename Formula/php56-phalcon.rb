@@ -10,6 +10,11 @@ class Php56Phalcon < AbstractPhp56Extension
 
   depends_on "pcre"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "23efebbdab8c44b6811fa9cdac23a8c176de85c5b66fb93ed0bf959ae82d06d3" => :high_sierra
+  end
+
   def install
     Dir.chdir "build/php5/64bits"
 

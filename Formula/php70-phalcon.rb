@@ -10,6 +10,11 @@ class Php70Phalcon < AbstractPhp70Extension
 
   depends_on "pcre"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "f991c2fc97e02ab73145d6eea7cd705bc944bde386613aee2d71ab0ad3c8501c" => :high_sierra
+  end
+
   def install
     Dir.chdir "build/php7/64bits"
 
