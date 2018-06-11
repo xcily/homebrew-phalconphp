@@ -5,11 +5,13 @@ class Php71Phalcon < AbstractPhp71Extension
   desc "Full-stack PHP framework"
   homepage "https://phalconphp.com/"
   url "https://github.com/phalcon/cphalcon/archive/v3.4.0.zip"
+  sha256 "acbffa40a928672d1874345c2aa4eee6f05e087c943e155031db92db3cdc7429"
+  head "https://github.com/phalcon/cphalcon.git"
 
   bottle do
     cellar :any_skip_relocation
     sha256 "796f8d84086ba777aa79a6801042c481a7bf0cf83493e59a6606d622eb014500" => :high_sierra
-  end
+    end
 
   depends_on "pcre"
 
